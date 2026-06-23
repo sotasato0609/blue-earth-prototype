@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WEB入会｜総合スポーツクラブ BLUE EARTH</title>
+<meta name="description" content="来店不要でかんたんWEB入会（対象店舗）。店舗・会員種別の選択、お客様情報、お支払いの3ステップで完了します。">
+<link rel="stylesheet" href="assets/css/be.css">
+</head>
+<body data-site="be" data-active="">
+<div id="site-header"></div>
+
+<main>
+<section class="phero">
+  <div class="phero-in">
+    <div class="crumb"><a href="index.html">ホーム</a> ／ WEB入会</div>
+    <div class="en">ONLINE SIGN-UP</div>
+    <h1>WEBでかんたん入会</h1>
+    <p>一部店舗では、来店することなくWEBでお手続きが完了します。3ステップでお申し込みいただけます。</p>
+  </div>
+</section>
+
+<section class="block"><div class="wrap"><div class="formwrap">
+  <div class="steps-bar">
+    <span class="sb on" data-n="1"><span class="n">1</span>プラン選択</span><span class="sep">›</span>
+    <span class="sb" data-n="2"><span class="n">2</span>お客様情報</span><span class="sep">›</span>
+    <span class="sb" data-n="3"><span class="n">3</span>お支払い</span>
+  </div>
+
+  <form class="fcard" id="join-form">
+    <!-- STEP 1 -->
+    <div data-step="1">
+      <h2 style="font-size:21px;font-weight:800;margin-bottom:16px">ご希望の種別を選択</h2>
+      <p class="muted" style="margin-bottom:16px;font-size:14px">会員種別・料金は店舗ごとに異なります。まず種別とご利用店舗をお選びください。</p>
+      <div class="plans" style="grid-template-columns:1fr 1fr 1fr">
+        <div class="plan feat-plan"><div class="rec">総合クラブ</div><h3>BLUE EARTH 会員</h3><ul><li>ジム・プール・スタジオ</li><li>温浴・スパ（対象店舗）</li><li>料金は店舗による</li></ul><label class="chooser" style="margin-top:14px;justify-content:center"><input type="radio" name="plan" checked>選択</label></div>
+        <div class="plan"><h3>24時間ジム MY-BODY</h3><ul><li>24時間365日 年中無休</li><li>月額会費 一律料金制</li><li>料金は店舗による</li></ul><label class="chooser" style="margin-top:14px;justify-content:center"><input type="radio" name="plan">選択</label></div>
+        <div class="plan"><h3>キッズスクール</h3><ul><li>スイミング・空手・バレエ等</li><li>クラス・対象年齢は店舗による</li><li>料金は店舗による</li></ul><label class="chooser" style="margin-top:14px;justify-content:center"><input type="radio" name="plan">選択</label></div>
+      </div>
+      <div class="field" style="margin-top:24px"><label>ご利用店舗<span class="req">必須</span></label>
+        <select><option>スポーツ・スパ店（山梨県・昭和町）</option><option>甲府店（山梨県）</option><option>敷島店（山梨県）</option><option>石和店（山梨県）</option><option>山梨店（山梨県）</option><option>南アルプス店（山梨県）</option><option>ブルーアース焼津店（静岡県）</option><option>MY-BODY 潮見店（東京都）</option><option>MY-BODY 南橋本店（神奈川県）</option><option>MY-BODY 前橋店（群馬県）</option><option>MY-BODY 佐久インターウェーブ店（長野県）</option></select>
+      </div>
+      <div style="margin-top:8px;text-align:right"><button class="btn btn-primary btn-lg" data-next type="button">次へ：お客様情報 ›</button></div>
+    </div>
+
+    <!-- STEP 2 -->
+    <div data-step="2" class="hidden">
+      <h2 style="font-size:21px;font-weight:800;margin-bottom:16px">お客様情報のご入力</h2>
+      <div class="frow">
+        <div class="field"><label>お名前<span class="req">必須</span></label><input type="text" placeholder="山梨 太郎"></div>
+        <div class="field"><label>フリガナ<span class="req">必須</span></label><input type="text" placeholder="ヤマナシ タロウ"></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label>生年月日<span class="req">必須</span></label><input type="date"></div>
+        <div class="field"><label>電話番号<span class="req">必須</span></label><input type="tel" placeholder="090-0000-0000"></div>
+      </div>
+      <div class="field"><label>メールアドレス<span class="req">必須</span></label><input type="email" placeholder="example@mail.com"></div>
+      <div class="field"><label>ご住所<span class="req">必須</span></label><input type="text" placeholder="山梨県甲府市○○町1-2-3"></div>
+      <div style="margin-top:8px;display:flex;justify-content:space-between;gap:10px">
+        <button class="btn btn-ghost" data-prev type="button">‹ 戻る</button>
+        <button class="btn btn-primary btn-lg" data-next type="button">次へ：お支払い ›</button>
+      </div>
+    </div>
+
+    <!-- STEP 3 -->
+    <div data-step="3" class="hidden">
+      <h2 style="font-size:21px;font-weight:800;margin-bottom:16px">お支払い方法</h2>
+      <div class="field">
+        <label>お支払い方法<span class="req">必須</span></label>
+        <div class="chooser">
+          <label><input type="radio" name="pay" checked>クレジットカード</label>
+          <label><input type="radio" name="pay">口座振替</label>
+        </div>
+      </div>
+      <div class="frow">
+        <div class="field"><label>カード番号</label><input type="text" placeholder="0000 0000 0000 0000"></div>
+        <div class="field"><label>有効期限</label><input type="text" placeholder="MM / YY"></div>
+      </div>
+      <div class="field" style="background:var(--teal-lt);border-radius:12px;padding:16px 18px">
+        <div style="display:flex;justify-content:space-between;font-weight:700"><span>初回お支払い</span><span style="color:var(--teal-dk)">入会金・登録手数料・月会費（2ヶ月分）</span></div>
+        <p class="muted" style="font-size:13px;margin-top:6px">※入会時の必要費用は店舗・会員種別により異なります。プロトタイプのため、実際の決済は行われません。</p>
+      </div>
+      <label class="chooser" style="border:0;padding:4px 0"><input type="checkbox" checked>利用規約・プライバシーポリシーに同意する</label>
+      <div style="margin-top:14px;display:flex;justify-content:space-between;gap:10px">
+        <button class="btn btn-ghost" data-prev type="button">‹ 戻る</button>
+        <button class="btn btn-primary btn-lg" type="submit">入会を申し込む</button>
+      </div>
+    </div>
+  </form>
+
+  <div class="fcard hidden" id="join-thanks">
+    <div class="thanks">
+      <div class="chk">✓</div>
+      <h2>ご入会ありがとうございます</h2>
+      <p class="muted" style="margin-top:12px">WEB入会のお申し込みを承りました。<br>確認メールをお送りしました（※サンプル動作）。当日からご利用いただけます。</p>
+      <div style="margin-top:24px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
+        <a class="btn btn-primary" href="index.html">トップに戻る</a>
+        <a class="btn btn-ghost" href="first.html">はじめての方へ</a>
+      </div>
+    </div>
+  </div>
+</div></div></section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/data/stores.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>店舗詳細｜総合スポーツクラブ BLUE EARTH</title>
+<meta name="description" content="店舗の設備・サービス・営業時間・アクセス・料金のご案内。無料体験・見学のご予約も承ります。">
+<link rel="stylesheet" href="assets/css/be.css">
+</head>
+<body data-site="be" data-active="stores">
+<div id="site-header"></div>
+
+<main id="store-detail">
+<div class="detail-hero"></div>
+<div class="wrap detail-head">
+  <div class="detail-card">
+    <div class="crumb" style="font-size:13px;color:var(--gray);margin-bottom:8px"><a href="index.html" style="color:var(--teal-dk)">ホーム</a> ／ <a href="stores.html" style="color:var(--teal-dk)">店舗を探す</a> ／ <span data-f="pref"></span></div>
+    <div class="pref"><span data-f="brand"></span>｜<span data-f="pref"></span></div>
+    <h1 data-f="name"></h1>
+    <div class="meta">📍 <span data-f="addr"></span><br>🕖 <span data-f="hours"></span><br>☎ <span data-f="tel"></span></div>
+    <div class="svc-pills" data-f="svc"></div>
+    <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+      <a class="btn btn-primary" href="trial.html">この店舗で無料体験</a>
+      <a class="btn btn-ghost" href="pricing.html">料金プランを見る</a>
+    </div>
+  </div>
+</div>
+
+<section class="block"><div class="wrap">
+  <div class="detail-grid">
+    <div>
+      <div class="shead" style="text-align:left;margin-bottom:20px">
+        <div class="en" style="color:var(--teal)">ABOUT THIS STORE</div>
+        <h2 style="font-size:25px">店舗のご紹介</h2>
+      </div>
+      <p class="muted" style="font-size:15.5px">山梨県を中心に、地域に根ざしたスポーツクラブとして1989年から健康づくりを応援してきました。提供する施設・サービスは店舗ごとに異なります（上記「施設・サービス」をご確認ください）。初めての方も、スタッフが目的に合わせた通い方をご提案します。<br><br><span style="color:var(--coral);font-weight:700">※店舗情報は公式サイト（2026-06-23時点）を基に作成。写真は汎用素材で実店舗のものではありません。</span></p>
+      <div class="gallery">
+        <div class="g" style="background-image:url(assets/img/be_fitness.jpg)"></div>
+        <div class="g" style="background-image:url(assets/img/be_studio.jpg)"></div>
+        <div class="g" style="background-image:url(assets/img/be_spa.jpg)"></div>
+      </div>
+
+      <h3 style="font-size:20px;font-weight:800;margin:34px 0 14px">店舗情報</h3>
+      <ul class="facts">
+        <li><div class="k">住所</div><div class="v" data-f="addr"></div></li>
+        <li><div class="k">電話</div><div class="v" data-f="tel"></div></li>
+        <li><div class="k">営業時間</div><div class="v" data-f="hours"></div></li>
+        <li><div class="k">施設・サービス</div><div class="v" data-f="svc2"></div></li>
+        <li><div class="k">料金</div><div class="v">会員種別・料金プランは店舗により異なります。<a href="pricing.html" style="color:var(--teal-dk);font-weight:700">料金について ›</a></div></li>
+      </ul>
+    </div>
+
+    <aside>
+      <div class="sidebox">
+        <h3>アクセス</h3>
+        <div style="height:180px;border-radius:10px;background:linear-gradient(135deg,#d8e6e3,#bfe5e1);display:flex;align-items:center;justify-content:center;color:var(--teal-dk);font-weight:700">🗺 地図（サンプル）</div>
+        <p class="muted" style="font-size:13.5px;margin-top:12px">📍 <span data-f="addr"></span></p>
+        <a class="btn btn-ghost" style="width:100%;margin-top:14px" href="stores.html">店舗一覧に戻る</a>
+      </div>
+      <div class="sidebox" style="margin-top:18px">
+        <h3>まずは体験から</h3>
+        <p class="muted" style="font-size:14px">見学・無料体験はWEBから24時間ご予約いただけます。</p>
+        <a class="btn btn-primary" style="width:100%;margin-top:14px" href="trial.html">無料体験を予約</a>
+        <a class="btn btn-ghost" style="width:100%;margin-top:10px" href="join.html">WEB入会</a>
+      </div>
+    </aside>
+  </div>
+</div></section>
+
+<section class="bg-soft"><div class="wrap" style="padding:46px 32px">
+  <div class="shead" style="margin-bottom:24px"><h2 style="font-size:24px">近隣の店舗</h2></div>
+  <div class="store-grid" id="store-list" data-only="be" data-detail="store.html" style="grid-template-columns:repeat(3,1fr)"></div>
+</div></section>
+</main>
+
+<div id="site-footer"></div>
+<script src="assets/data/stores.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
